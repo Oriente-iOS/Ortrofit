@@ -13,8 +13,8 @@
 #import "OrInvocationHandler.h"
 #import "ORMethod.h"
 
-static NSString *const OrtroAspectsSubclassSuffix = @"_ortro_aspects_";
-static NSString *const AspectsMessagePrefix = @"ortro_aspects_";
+static NSString *const OrtroProxySubclassSuffix = @"_ortro_proxy_";
+static NSString *const OrtroProxyMessagePrefix = @"ortro_proxy_";
 static NSMutableDictionary *invocationHandlerCache;
 
 @implementation OrtroProxy
@@ -89,7 +89,7 @@ static void ortro_prepareClassAndHookSelector(NSObject *self, SEL selector, NSEr
 
 static SEL ortro_aliasForSelector(SEL selector) {
     NSCParameterAssert(selector);
-    return NSSelectorFromString([AspectsMessagePrefix stringByAppendingFormat:@"_%@", NSStringFromSelector(selector)]);
+    return NSSelectorFromString([OrtroProxyMessagePrefix stringByAppendingFormat:@"_%@", NSStringFromSelector(selector)]);
 }
 
 static Class ortro_hookClass(NSObject *self, NSError **error) {
@@ -99,10 +99,10 @@ static Class ortro_hookClass(NSObject *self, NSError **error) {
     NSString *className = NSStringFromClass(baseClass);
     
     // Already subclassed
-    if ([className hasSuffix:OrtroAspectsSubclassSuffix]) {
+    if ([className hasSuffix:OrtroProxySubclassSuffix]) {
         return baseClass;
     }
-    const char *subclassName = [className stringByAppendingString:OrtroAspectsSubclassSuffix].UTF8String;
+    const char *subclassName = [className stringByAppendingString:OrtroProxySubclassSuffix].UTF8String;
     Class subclass = objc_getClass(subclassName);
     if (subclass == nil) {
         subclass = objc_allocateClassPair(baseClass, subclassName, 0);
@@ -128,14 +128,14 @@ static void ortro_hookedGetClass(Class class, Class statedClass) {
     class_replaceMethod(class, @selector(class), newIMP, method_getTypeEncoding(method));
 }
 
-static NSString *const OrtroAspectsForwardInvocationSelectorName = @"__ortro_aspects_forwardInvocation:";
+static NSString *const OrtroProxyForwardInvocationSelectorName = @"__ortro_proxy_forwardInvocation:";
 static void ortro_swizzleForwardInvocation(Class klass) {
     NSCParameterAssert(klass);
     // If there is no method, replace will act like class_addMethod.
-    class_replaceMethod(klass, @selector(forwardInvocation:), (IMP)__ASPECTS_ARE_BEING_CALLED__, "v@:@");
+    class_replaceMethod(klass, @selector(forwardInvocation:), (IMP)__PROXY_ARE_BEING_CALLED__, "v@:@");
 }
 
-static void __ASPECTS_ARE_BEING_CALLED__(__unsafe_unretained NSObject *self, SEL selector, NSInvocation *invocation) {
+static void __PROXY_ARE_BEING_CALLED__(__unsafe_unretained NSObject *self, SEL selector, NSInvocation *invocation) {
     NSCParameterAssert(self);
     NSCParameterAssert(invocation);
     ORMethod *realMethod = [[ORMethod alloc] initWitClaz:[invocation.target class] selectorStr:NSStringFromSelector(invocation.selector)];
