@@ -734,6 +734,7 @@
 			baseConfigurationReference = 9481EA92451AF488272FA39F /* Pods-Ortrofit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Ortrofit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -751,6 +752,7 @@
 			baseConfigurationReference = DD407D46F88662BF48A6C350 /* Pods-Ortrofit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Ortrofit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
