@@ -1,5 +1,5 @@
 # Ortrofit
-An convenient network API framework based on AFNetworking
+A convenient network API framework based on AFNetworking
 
 ## 介绍
 **Ortrofit**是一款在**AFNetworking**前端网络网络框架的基础之上封装出来的一套新的网络API框架。它的主要思想源于安卓的基于**OkHttp**封装出来的**Retrofit**，因此取名为**Ortrofit**也是为了向其致敬。**Ortrofit**旨在使用Annotation的方式简洁的描述一个网络请求的API，并在Request和Response中实现自定义的APO拦截，同时也增加了对于RAC的支持。
@@ -67,12 +67,12 @@ An convenient network API framework based on AFNetworking
 ```
 上面代码创建了一个UserService的服务类，里面包含了根据用户id获取用户信息和设置用户信息两个接口，第一个接口返回一个**RACSignal**实例,第二个接口返回**OrtroCall**实例。
 
-* **@EXPORT_API:**必须添加，根据传人的方法名参数定位这些配置参数是应用到具体哪一个网络请求API，参数名就是API的SEL名并把":"替换成"_"。
-* **BEGIN / END:**必须添加，表示API描述的开始和结束。
-* **@ReturnType:**必须添加(除：OrtroCall)，表示API返回的类型。
-* **@Method:**必须添加，网络请求的类型，如：GET、POST。
-* **@Path:**必须添加，网络请求的Path路径。
-* **@ParameterName:**如果有参数必须添加，网络请求的参数名称定义，与API的入参顺序一致。
+* **@EXPORT_API:** 必须添加，根据传人的方法名参数定位这些配置参数是应用到具体哪一个网络请求API，参数名就是API的SEL名并把":"替换成"_"。
+* **BEGIN / END:** 必须添加，表示API描述的开始和结束。
+* **@ReturnType:** 必须添加(除：OrtroCall)，表示API返回的类型。
+* **@Method:** 必须添加，网络请求的类型，如：GET、POST。
+* **@Path:** 必须添加，网络请求的Path路径。
+* **@ParameterName:** 如果有参数必须添加，网络请求的参数名称定义，与API的入参顺序一致。
 
 #### 更多支持
 * **@Path**
@@ -83,7 +83,7 @@ An convenient network API framework based on AFNetworking
 @Path(user/{phoneNO}/getuserinfo)
 
 ```
-请求路径上面的参数会和**@ParameterName**一起排序后与API的请求参数值进行合并。
+请求路径上面的参数会和 **@ParameterName**一起排序后与API的请求参数值进行合并。
 
 * **@Header** 
 
@@ -112,5 +112,3 @@ An convenient network API framework based on AFNetworking
 	}];
 	
 ```
-## 原理分析
-后续更新...
