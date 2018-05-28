@@ -22,7 +22,7 @@ A convenient network API framework based on AFNetworking
 
 * **baseURL:** 网络请求连接中前面相同的部分可以提前配置，后面的请求API只需要配置Path即可。
 * **OrtroSessionTaskFactory:** 工厂方法，可以被业务层继承并复写，默认返回一个**NSURLSessionTask**的实例。
-* **OrtroRACCallAdaptorFactory:** 工厂方法，继承自**OrtroCallAdaptorFactory**在其*-(id)adapt:*方法内包装了**OrtroCall**并返回了**RACSignal**实例。
+* **OrtroRACCallAdaptorFactory:** 工厂方法，继承自**OrtroCallAdaptorFactory**在其 *-(id)adapt:* 方法内包装了**OrtroCall**并返回了**RACSignal**实例。
 * **OrtroCallAdaptorFactory:** **OrtroCall**的默认工厂方法，接受**OrtroCall** 实例并直接返回不作处理。
 
 #### 网络服务定义
