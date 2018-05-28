@@ -1,0 +1,878 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B5DFEF87E3F85EA24379012 /* libPods-Ortrofit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7336B283110C071434E032 /* libPods-Ortrofit.a */; };
+		AFCE0F2F20AF19420001097F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F2E20AF19420001097F /* AppDelegate.m */; };
+		AFCE0F3220AF19420001097F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F3120AF19420001097F /* ViewController.m */; };
+		AFCE0F3520AF19420001097F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFCE0F3320AF19420001097F /* Main.storyboard */; };
+		AFCE0F3720AF19450001097F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFCE0F3620AF19450001097F /* Assets.xcassets */; };
+		AFCE0F3A20AF19450001097F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFCE0F3820AF19450001097F /* LaunchScreen.storyboard */; };
+		AFCE0F3D20AF19450001097F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F3C20AF19450001097F /* main.m */; };
+		AFCE0F4720AF19450001097F /* OrtrofitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F4620AF19450001097F /* OrtrofitTests.m */; };
+		AFCE0F5220AF19450001097F /* OrtrofitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F5120AF19450001097F /* OrtrofitUITests.m */; };
+		AFCE0F9820AF19B90001097F /* OrtroProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F6120AF19B90001097F /* OrtroProxy.m */; };
+		AFCE0F9920AF19B90001097F /* OrInvocationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F6220AF19B90001097F /* OrInvocationHandler.m */; };
+		AFCE0F9C20AF19B90001097F /* ORRequestAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F7020AF19B90001097F /* ORRequestAdaptor.m */; };
+		AFCE0F9D20AF19B90001097F /* ORRequestRedirectAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F7120AF19B90001097F /* ORRequestRedirectAdaptor.m */; };
+		AFCE0F9E20AF19B90001097F /* ORRequestRedirectAdaptorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F7220AF19B90001097F /* ORRequestRedirectAdaptorFactory.m */; };
+		AFCE0F9F20AF19B90001097F /* ORRequestAdaptorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F7320AF19B90001097F /* ORRequestAdaptorFactory.m */; };
+		AFCE0FA020AF19B90001097F /* OrtroCall.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F7920AF19B90001097F /* OrtroCall.m */; };
+		AFCE0FA120AF19B90001097F /* OrtroSessionTaskFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F7A20AF19B90001097F /* OrtroSessionTaskFactory.m */; };
+		AFCE0FA220AF19B90001097F /* OrtroCallSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F7B20AF19B90001097F /* OrtroCallSignature.m */; };
+		AFCE0FA320AF19B90001097F /* OrtroServiceMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F7C20AF19B90001097F /* OrtroServiceMethod.m */; };
+		AFCE0FA420AF19B90001097F /* ORResponseAdaptorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F7E20AF19B90001097F /* ORResponseAdaptorFactory.m */; };
+		AFCE0FA520AF19B90001097F /* ORResponseAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F8120AF19B90001097F /* ORResponseAdaptor.m */; };
+		AFCE0FA620AF19B90001097F /* OrtroCallAdaptorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F8320AF19B90001097F /* OrtroCallAdaptorFactory.m */; };
+		AFCE0FA720AF19B90001097F /* OrtroCallAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F8520AF19B90001097F /* OrtroCallAdaptor.m */; };
+		AFCE0FA820AF19B90001097F /* RACSignal+OrtroCall.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F8820AF19B90001097F /* RACSignal+OrtroCall.m */; };
+		AFCE0FA920AF19B90001097F /* OrtroRACCallAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F8B20AF19B90001097F /* OrtroRACCallAdaptor.m */; };
+		AFCE0FAA20AF19B90001097F /* OrtroRACCallAdaptorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F8D20AF19B90001097F /* OrtroRACCallAdaptorFactory.m */; };
+		AFCE0FAB20AF19B90001097F /* OrtroPath.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F9120AF19B90001097F /* OrtroPath.m */; };
+		AFCE0FAC20AF19B90001097F /* Ortrofit.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F9220AF19B90001097F /* Ortrofit.m */; };
+		AFCE0FAD20AF19B90001097F /* OrtroServiceMethod+ParamHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F9420AF19B90001097F /* OrtroServiceMethod+ParamHandler.m */; };
+		AFCE0FAE20AF19B90001097F /* ORMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F9720AF19B90001097F /* ORMethod.m */; };
+		AFCE0FB220AF1AAF0001097F /* OrtrofitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0FB120AF1AAF0001097F /* OrtrofitManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFCE0F4320AF19450001097F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFCE0F2220AF19420001097F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFCE0F2920AF19420001097F;
+			remoteInfo = Ortrofit;
+		};
+		AFCE0F4E20AF19450001097F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFCE0F2220AF19420001097F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFCE0F2920AF19420001097F;
+			remoteInfo = Ortrofit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B7336B283110C071434E032 /* libPods-Ortrofit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ortrofit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9481EA92451AF488272FA39F /* Pods-Ortrofit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ortrofit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ortrofit/Pods-Ortrofit.debug.xcconfig"; sourceTree = "<group>"; };
+		AFCE0F2A20AF19420001097F /* Ortrofit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ortrofit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFCE0F2D20AF19420001097F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AFCE0F2E20AF19420001097F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AFCE0F3020AF19420001097F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AFCE0F3120AF19420001097F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AFCE0F3420AF19420001097F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFCE0F3620AF19450001097F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFCE0F3920AF19450001097F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AFCE0F3B20AF19450001097F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFCE0F3C20AF19450001097F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AFCE0F4220AF19450001097F /* OrtrofitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrtrofitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFCE0F4620AF19450001097F /* OrtrofitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrtrofitTests.m; sourceTree = "<group>"; };
+		AFCE0F4820AF19450001097F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFCE0F4D20AF19450001097F /* OrtrofitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrtrofitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFCE0F5120AF19450001097F /* OrtrofitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrtrofitUITests.m; sourceTree = "<group>"; };
+		AFCE0F5320AF19450001097F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFCE0F6120AF19B90001097F /* OrtroProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrtroProxy.m; sourceTree = "<group>"; };
+		AFCE0F6220AF19B90001097F /* OrInvocationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrInvocationHandler.m; sourceTree = "<group>"; };
+		AFCE0F6320AF19B90001097F /* OrtroProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroProxy.h; sourceTree = "<group>"; };
+		AFCE0F6420AF19B90001097F /* OrInvocationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrInvocationHandler.h; sourceTree = "<group>"; };
+		AFCE0F6A20AF19B90001097F /* OrtroServiceMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroServiceMethod.h; sourceTree = "<group>"; };
+		AFCE0F6C20AF19B90001097F /* ORRequestRedirectAdaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORRequestRedirectAdaptor.h; sourceTree = "<group>"; };
+		AFCE0F6D20AF19B90001097F /* ORRequestAdaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORRequestAdaptor.h; sourceTree = "<group>"; };
+		AFCE0F6E20AF19B90001097F /* ORRequestAdaptorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORRequestAdaptorFactory.h; sourceTree = "<group>"; };
+		AFCE0F6F20AF19B90001097F /* ORRequestRedirectAdaptorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORRequestRedirectAdaptorFactory.h; sourceTree = "<group>"; };
+		AFCE0F7020AF19B90001097F /* ORRequestAdaptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORRequestAdaptor.m; sourceTree = "<group>"; };
+		AFCE0F7120AF19B90001097F /* ORRequestRedirectAdaptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORRequestRedirectAdaptor.m; sourceTree = "<group>"; };
+		AFCE0F7220AF19B90001097F /* ORRequestRedirectAdaptorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORRequestRedirectAdaptorFactory.m; sourceTree = "<group>"; };
+		AFCE0F7320AF19B90001097F /* ORRequestAdaptorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORRequestAdaptorFactory.m; sourceTree = "<group>"; };
+		AFCE0F7420AF19B90001097F /* Ortrofit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ortrofit.h; sourceTree = "<group>"; };
+		AFCE0F7620AF19B90001097F /* OrtroCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroCall.h; sourceTree = "<group>"; };
+		AFCE0F7720AF19B90001097F /* OrtroSessionTaskFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroSessionTaskFactory.h; sourceTree = "<group>"; };
+		AFCE0F7820AF19B90001097F /* OrtroCallSignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroCallSignature.h; sourceTree = "<group>"; };
+		AFCE0F7920AF19B90001097F /* OrtroCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrtroCall.m; sourceTree = "<group>"; };
+		AFCE0F7A20AF19B90001097F /* OrtroSessionTaskFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrtroSessionTaskFactory.m; sourceTree = "<group>"; };
+		AFCE0F7B20AF19B90001097F /* OrtroCallSignature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrtroCallSignature.m; sourceTree = "<group>"; };
+		AFCE0F7C20AF19B90001097F /* OrtroServiceMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrtroServiceMethod.m; sourceTree = "<group>"; };
+		AFCE0F7E20AF19B90001097F /* ORResponseAdaptorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORResponseAdaptorFactory.m; sourceTree = "<group>"; };
+		AFCE0F7F20AF19B90001097F /* ORResponseAdaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORResponseAdaptor.h; sourceTree = "<group>"; };
+		AFCE0F8020AF19B90001097F /* ORResponseAdaptorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORResponseAdaptorFactory.h; sourceTree = "<group>"; };
+		AFCE0F8120AF19B90001097F /* ORResponseAdaptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORResponseAdaptor.m; sourceTree = "<group>"; };
+		AFCE0F8320AF19B90001097F /* OrtroCallAdaptorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrtroCallAdaptorFactory.m; sourceTree = "<group>"; };
+		AFCE0F8420AF19B90001097F /* OrtroCallAdaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroCallAdaptor.h; sourceTree = "<group>"; };
+		AFCE0F8520AF19B90001097F /* OrtroCallAdaptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrtroCallAdaptor.m; sourceTree = "<group>"; };
+		AFCE0F8620AF19B90001097F /* OrtroCallAdaptorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroCallAdaptorFactory.h; sourceTree = "<group>"; };
+		AFCE0F8820AF19B90001097F /* RACSignal+OrtroCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+OrtroCall.m"; sourceTree = "<group>"; };
+		AFCE0F8920AF19B90001097F /* OrtroRACCallAdaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroRACCallAdaptor.h; sourceTree = "<group>"; };
+		AFCE0F8A20AF19B90001097F /* OrtroRACCallAdaptorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroRACCallAdaptorFactory.h; sourceTree = "<group>"; };
+		AFCE0F8B20AF19B90001097F /* OrtroRACCallAdaptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrtroRACCallAdaptor.m; sourceTree = "<group>"; };
+		AFCE0F8C20AF19B90001097F /* RACSignal+OrtroCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+OrtroCall.h"; sourceTree = "<group>"; };
+		AFCE0F8D20AF19B90001097F /* OrtroRACCallAdaptorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrtroRACCallAdaptorFactory.m; sourceTree = "<group>"; };
+		AFCE0F8F20AF19B90001097F /* OrtroPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroPath.h; sourceTree = "<group>"; };
+		AFCE0F9020AF19B90001097F /* OrtroMicro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroMicro.h; sourceTree = "<group>"; };
+		AFCE0F9120AF19B90001097F /* OrtroPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrtroPath.m; sourceTree = "<group>"; };
+		AFCE0F9220AF19B90001097F /* Ortrofit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ortrofit.m; sourceTree = "<group>"; };
+		AFCE0F9420AF19B90001097F /* OrtroServiceMethod+ParamHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OrtroServiceMethod+ParamHandler.m"; sourceTree = "<group>"; };
+		AFCE0F9520AF19B90001097F /* ORMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORMethod.h; sourceTree = "<group>"; };
+		AFCE0F9620AF19B90001097F /* OrtroServiceMethod+ParamHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OrtroServiceMethod+ParamHandler.h"; sourceTree = "<group>"; };
+		AFCE0F9720AF19B90001097F /* ORMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORMethod.m; sourceTree = "<group>"; };
+		AFCE0FB020AF1AAF0001097F /* OrtrofitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtrofitManager.h; sourceTree = "<group>"; };
+		AFCE0FB120AF1AAF0001097F /* OrtrofitManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrtrofitManager.m; sourceTree = "<group>"; };
+		DD407D46F88662BF48A6C350 /* Pods-Ortrofit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ortrofit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ortrofit/Pods-Ortrofit.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFCE0F2720AF19420001097F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B5DFEF87E3F85EA24379012 /* libPods-Ortrofit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCE0F3F20AF19450001097F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCE0F4A20AF19450001097F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27891D7DCB9D2F9C1BEB02CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B7336B283110C071434E032 /* libPods-Ortrofit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4E65177ADAEC61D9F36C88E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9481EA92451AF488272FA39F /* Pods-Ortrofit.debug.xcconfig */,
+				DD407D46F88662BF48A6C350 /* Pods-Ortrofit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AFCE0F2120AF19420001097F = {
+			isa = PBXGroup;
+			children = (
+				AFCE0F2C20AF19420001097F /* Ortrofit */,
+				AFCE0F4520AF19450001097F /* OrtrofitTests */,
+				AFCE0F5020AF19450001097F /* OrtrofitUITests */,
+				AFCE0F2B20AF19420001097F /* Products */,
+				A4E65177ADAEC61D9F36C88E /* Pods */,
+				27891D7DCB9D2F9C1BEB02CD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AFCE0F2B20AF19420001097F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFCE0F2A20AF19420001097F /* Ortrofit.app */,
+				AFCE0F4220AF19450001097F /* OrtrofitTests.xctest */,
+				AFCE0F4D20AF19450001097F /* OrtrofitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFCE0F2C20AF19420001097F /* Ortrofit */ = {
+			isa = PBXGroup;
+			children = (
+				AFCE0FEC20BBF0230001097F /* OrtrofitConvenient */,
+				AFCE0FAF20AF1AAF0001097F /* OrtrofitDemo */,
+				AFCE0F5F20AF19B90001097F /* Ortrofit */,
+				AFCE0F2D20AF19420001097F /* AppDelegate.h */,
+				AFCE0F2E20AF19420001097F /* AppDelegate.m */,
+				AFCE0F3020AF19420001097F /* ViewController.h */,
+				AFCE0F3120AF19420001097F /* ViewController.m */,
+				AFCE0F3320AF19420001097F /* Main.storyboard */,
+				AFCE0F3620AF19450001097F /* Assets.xcassets */,
+				AFCE0F3820AF19450001097F /* LaunchScreen.storyboard */,
+				AFCE0F3B20AF19450001097F /* Info.plist */,
+				AFCE0F3C20AF19450001097F /* main.m */,
+			);
+			path = Ortrofit;
+			sourceTree = "<group>";
+		};
+		AFCE0F4520AF19450001097F /* OrtrofitTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFCE0F4620AF19450001097F /* OrtrofitTests.m */,
+				AFCE0F4820AF19450001097F /* Info.plist */,
+			);
+			path = OrtrofitTests;
+			sourceTree = "<group>";
+		};
+		AFCE0F5020AF19450001097F /* OrtrofitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AFCE0F5120AF19450001097F /* OrtrofitUITests.m */,
+				AFCE0F5320AF19450001097F /* Info.plist */,
+			);
+			path = OrtrofitUITests;
+			sourceTree = "<group>";
+		};
+		AFCE0F5F20AF19B90001097F /* Ortrofit */ = {
+			isa = PBXGroup;
+			children = (
+				AFCE0F7420AF19B90001097F /* Ortrofit.h */,
+				AFCE0F9220AF19B90001097F /* Ortrofit.m */,
+				AFCE0F6A20AF19B90001097F /* OrtroServiceMethod.h */,
+				AFCE0F7C20AF19B90001097F /* OrtroServiceMethod.m */,
+				AFCE0F6020AF19B90001097F /* OrtroProxy */,
+				AFCE0F6B20AF19B90001097F /* RequestAdaptor */,
+				AFCE0F7520AF19B90001097F /* ServiceCall */,
+				AFCE0F7D20AF19B90001097F /* ResponseAdaptor */,
+				AFCE0F8220AF19B90001097F /* CallAdaptor */,
+				AFCE0F8E20AF19B90001097F /* SupportFiles */,
+				AFCE0F9320AF19B90001097F /* Utility */,
+			);
+			path = Ortrofit;
+			sourceTree = "<group>";
+		};
+		AFCE0F6020AF19B90001097F /* OrtroProxy */ = {
+			isa = PBXGroup;
+			children = (
+				AFCE0F6120AF19B90001097F /* OrtroProxy.m */,
+				AFCE0F6220AF19B90001097F /* OrInvocationHandler.m */,
+				AFCE0F6320AF19B90001097F /* OrtroProxy.h */,
+				AFCE0F6420AF19B90001097F /* OrInvocationHandler.h */,
+			);
+			path = OrtroProxy;
+			sourceTree = "<group>";
+		};
+		AFCE0F6B20AF19B90001097F /* RequestAdaptor */ = {
+			isa = PBXGroup;
+			children = (
+				AFCE0F6C20AF19B90001097F /* ORRequestRedirectAdaptor.h */,
+				AFCE0F6D20AF19B90001097F /* ORRequestAdaptor.h */,
+				AFCE0F6E20AF19B90001097F /* ORRequestAdaptorFactory.h */,
+				AFCE0F6F20AF19B90001097F /* ORRequestRedirectAdaptorFactory.h */,
+				AFCE0F7020AF19B90001097F /* ORRequestAdaptor.m */,
+				AFCE0F7120AF19B90001097F /* ORRequestRedirectAdaptor.m */,
+				AFCE0F7220AF19B90001097F /* ORRequestRedirectAdaptorFactory.m */,
+				AFCE0F7320AF19B90001097F /* ORRequestAdaptorFactory.m */,
+			);
+			path = RequestAdaptor;
+			sourceTree = "<group>";
+		};
+		AFCE0F7520AF19B90001097F /* ServiceCall */ = {
+			isa = PBXGroup;
+			children = (
+				AFCE0F7620AF19B90001097F /* OrtroCall.h */,
+				AFCE0F7720AF19B90001097F /* OrtroSessionTaskFactory.h */,
+				AFCE0F7820AF19B90001097F /* OrtroCallSignature.h */,
+				AFCE0F7920AF19B90001097F /* OrtroCall.m */,
+				AFCE0F7A20AF19B90001097F /* OrtroSessionTaskFactory.m */,
+				AFCE0F7B20AF19B90001097F /* OrtroCallSignature.m */,
+			);
+			path = ServiceCall;
+			sourceTree = "<group>";
+		};
+		AFCE0F7D20AF19B90001097F /* ResponseAdaptor */ = {
+			isa = PBXGroup;
+			children = (
+				AFCE0F7E20AF19B90001097F /* ORResponseAdaptorFactory.m */,
+				AFCE0F7F20AF19B90001097F /* ORResponseAdaptor.h */,
+				AFCE0F8020AF19B90001097F /* ORResponseAdaptorFactory.h */,
+				AFCE0F8120AF19B90001097F /* ORResponseAdaptor.m */,
+			);
+			path = ResponseAdaptor;
+			sourceTree = "<group>";
+		};
+		AFCE0F8220AF19B90001097F /* CallAdaptor */ = {
+			isa = PBXGroup;
+			children = (
+				AFCE0F8320AF19B90001097F /* OrtroCallAdaptorFactory.m */,
+				AFCE0F8420AF19B90001097F /* OrtroCallAdaptor.h */,
+				AFCE0F8520AF19B90001097F /* OrtroCallAdaptor.m */,
+				AFCE0F8620AF19B90001097F /* OrtroCallAdaptorFactory.h */,
+				AFCE0F8720AF19B90001097F /* RAC */,
+			);
+			path = CallAdaptor;
+			sourceTree = "<group>";
+		};
+		AFCE0F8720AF19B90001097F /* RAC */ = {
+			isa = PBXGroup;
+			children = (
+				AFCE0F8820AF19B90001097F /* RACSignal+OrtroCall.m */,
+				AFCE0F8920AF19B90001097F /* OrtroRACCallAdaptor.h */,
+				AFCE0F8A20AF19B90001097F /* OrtroRACCallAdaptorFactory.h */,
+				AFCE0F8B20AF19B90001097F /* OrtroRACCallAdaptor.m */,
+				AFCE0F8C20AF19B90001097F /* RACSignal+OrtroCall.h */,
+				AFCE0F8D20AF19B90001097F /* OrtroRACCallAdaptorFactory.m */,
+			);
+			path = RAC;
+			sourceTree = "<group>";
+		};
+		AFCE0F8E20AF19B90001097F /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AFCE0F8F20AF19B90001097F /* OrtroPath.h */,
+				AFCE0F9020AF19B90001097F /* OrtroMicro.h */,
+				AFCE0F9120AF19B90001097F /* OrtroPath.m */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		AFCE0F9320AF19B90001097F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				AFCE0F9420AF19B90001097F /* OrtroServiceMethod+ParamHandler.m */,
+				AFCE0F9520AF19B90001097F /* ORMethod.h */,
+				AFCE0F9620AF19B90001097F /* OrtroServiceMethod+ParamHandler.h */,
+				AFCE0F9720AF19B90001097F /* ORMethod.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		AFCE0FAF20AF1AAF0001097F /* OrtrofitDemo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OrtrofitDemo;
+			sourceTree = "<group>";
+		};
+		AFCE0FEC20BBF0230001097F /* OrtrofitConvenient */ = {
+			isa = PBXGroup;
+			children = (
+				AFCE0FB020AF1AAF0001097F /* OrtrofitManager.h */,
+				AFCE0FB120AF1AAF0001097F /* OrtrofitManager.m */,
+			);
+			path = OrtrofitConvenient;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFCE0F2920AF19420001097F /* Ortrofit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFCE0F5620AF19450001097F /* Build configuration list for PBXNativeTarget "Ortrofit" */;
+			buildPhases = (
+				D3A8986C519ACDD7E424914A /* [CP] Check Pods Manifest.lock */,
+				AFCE0F2620AF19420001097F /* Sources */,
+				AFCE0F2720AF19420001097F /* Frameworks */,
+				AFCE0F2820AF19420001097F /* Resources */,
+				F4252607AC77A197FBB46465 /* [CP] Embed Pods Frameworks */,
+				40FCA8479F37091CFD3BE9D5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ortrofit;
+			productName = Ortrofit;
+			productReference = AFCE0F2A20AF19420001097F /* Ortrofit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFCE0F4120AF19450001097F /* OrtrofitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFCE0F5920AF19450001097F /* Build configuration list for PBXNativeTarget "OrtrofitTests" */;
+			buildPhases = (
+				AFCE0F3E20AF19450001097F /* Sources */,
+				AFCE0F3F20AF19450001097F /* Frameworks */,
+				AFCE0F4020AF19450001097F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFCE0F4420AF19450001097F /* PBXTargetDependency */,
+			);
+			name = OrtrofitTests;
+			productName = OrtrofitTests;
+			productReference = AFCE0F4220AF19450001097F /* OrtrofitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AFCE0F4C20AF19450001097F /* OrtrofitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFCE0F5C20AF19450001097F /* Build configuration list for PBXNativeTarget "OrtrofitUITests" */;
+			buildPhases = (
+				AFCE0F4920AF19450001097F /* Sources */,
+				AFCE0F4A20AF19450001097F /* Frameworks */,
+				AFCE0F4B20AF19450001097F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFCE0F4F20AF19450001097F /* PBXTargetDependency */,
+			);
+			name = OrtrofitUITests;
+			productName = OrtrofitUITests;
+			productReference = AFCE0F4D20AF19450001097F /* OrtrofitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFCE0F2220AF19420001097F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = mathewwang;
+				TargetAttributes = {
+					AFCE0F2920AF19420001097F = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					AFCE0F4120AF19450001097F = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = AFCE0F2920AF19420001097F;
+					};
+					AFCE0F4C20AF19450001097F = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = AFCE0F2920AF19420001097F;
+					};
+				};
+			};
+			buildConfigurationList = AFCE0F2520AF19420001097F /* Build configuration list for PBXProject "Ortrofit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFCE0F2120AF19420001097F;
+			productRefGroup = AFCE0F2B20AF19420001097F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFCE0F2920AF19420001097F /* Ortrofit */,
+				AFCE0F4120AF19450001097F /* OrtrofitTests */,
+				AFCE0F4C20AF19450001097F /* OrtrofitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFCE0F2820AF19420001097F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFCE0F3A20AF19450001097F /* LaunchScreen.storyboard in Resources */,
+				AFCE0F3720AF19450001097F /* Assets.xcassets in Resources */,
+				AFCE0F3520AF19420001097F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCE0F4020AF19450001097F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCE0F4B20AF19450001097F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40FCA8479F37091CFD3BE9D5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ortrofit/Pods-Ortrofit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3A8986C519ACDD7E424914A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ortrofit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4252607AC77A197FBB46465 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ortrofit/Pods-Ortrofit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFCE0F2620AF19420001097F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFCE0FAD20AF19B90001097F /* OrtroServiceMethod+ParamHandler.m in Sources */,
+				AFCE0FA020AF19B90001097F /* OrtroCall.m in Sources */,
+				AFCE0F9F20AF19B90001097F /* ORRequestAdaptorFactory.m in Sources */,
+				AFCE0F3220AF19420001097F /* ViewController.m in Sources */,
+				AFCE0F9C20AF19B90001097F /* ORRequestAdaptor.m in Sources */,
+				AFCE0FA820AF19B90001097F /* RACSignal+OrtroCall.m in Sources */,
+				AFCE0FA220AF19B90001097F /* OrtroCallSignature.m in Sources */,
+				AFCE0FAB20AF19B90001097F /* OrtroPath.m in Sources */,
+				AFCE0F9E20AF19B90001097F /* ORRequestRedirectAdaptorFactory.m in Sources */,
+				AFCE0FA420AF19B90001097F /* ORResponseAdaptorFactory.m in Sources */,
+				AFCE0FA920AF19B90001097F /* OrtroRACCallAdaptor.m in Sources */,
+				AFCE0FA720AF19B90001097F /* OrtroCallAdaptor.m in Sources */,
+				AFCE0FA620AF19B90001097F /* OrtroCallAdaptorFactory.m in Sources */,
+				AFCE0FAE20AF19B90001097F /* ORMethod.m in Sources */,
+				AFCE0FAC20AF19B90001097F /* Ortrofit.m in Sources */,
+				AFCE0F9D20AF19B90001097F /* ORRequestRedirectAdaptor.m in Sources */,
+				AFCE0F9920AF19B90001097F /* OrInvocationHandler.m in Sources */,
+				AFCE0F3D20AF19450001097F /* main.m in Sources */,
+				AFCE0F2F20AF19420001097F /* AppDelegate.m in Sources */,
+				AFCE0FA520AF19B90001097F /* ORResponseAdaptor.m in Sources */,
+				AFCE0FA320AF19B90001097F /* OrtroServiceMethod.m in Sources */,
+				AFCE0FB220AF1AAF0001097F /* OrtrofitManager.m in Sources */,
+				AFCE0FA120AF19B90001097F /* OrtroSessionTaskFactory.m in Sources */,
+				AFCE0FAA20AF19B90001097F /* OrtroRACCallAdaptorFactory.m in Sources */,
+				AFCE0F9820AF19B90001097F /* OrtroProxy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCE0F3E20AF19450001097F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFCE0F4720AF19450001097F /* OrtrofitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCE0F4920AF19450001097F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFCE0F5220AF19450001097F /* OrtrofitUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFCE0F4420AF19450001097F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFCE0F2920AF19420001097F /* Ortrofit */;
+			targetProxy = AFCE0F4320AF19450001097F /* PBXContainerItemProxy */;
+		};
+		AFCE0F4F20AF19450001097F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFCE0F2920AF19420001097F /* Ortrofit */;
+			targetProxy = AFCE0F4E20AF19450001097F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AFCE0F3320AF19420001097F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFCE0F3420AF19420001097F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AFCE0F3820AF19450001097F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFCE0F3920AF19450001097F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFCE0F5420AF19450001097F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AFCE0F5520AF19450001097F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFCE0F5720AF19450001097F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9481EA92451AF488272FA39F /* Pods-Ortrofit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Ortrofit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.network.ortrofit.Ortrofit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFCE0F5820AF19450001097F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD407D46F88662BF48A6C350 /* Pods-Ortrofit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Ortrofit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.network.ortrofit.Ortrofit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AFCE0F5A20AF19450001097F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OrtrofitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.network.ortrofit.OrtrofitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ortrofit.app/Ortrofit";
+			};
+			name = Debug;
+		};
+		AFCE0F5B20AF19450001097F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OrtrofitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.network.ortrofit.OrtrofitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ortrofit.app/Ortrofit";
+			};
+			name = Release;
+		};
+		AFCE0F5D20AF19450001097F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OrtrofitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.network.ortrofit.OrtrofitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ortrofit;
+			};
+			name = Debug;
+		};
+		AFCE0F5E20AF19450001097F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OrtrofitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.network.ortrofit.OrtrofitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ortrofit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFCE0F2520AF19420001097F /* Build configuration list for PBXProject "Ortrofit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFCE0F5420AF19450001097F /* Debug */,
+				AFCE0F5520AF19450001097F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFCE0F5620AF19450001097F /* Build configuration list for PBXNativeTarget "Ortrofit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFCE0F5720AF19450001097F /* Debug */,
+				AFCE0F5820AF19450001097F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFCE0F5920AF19450001097F /* Build configuration list for PBXNativeTarget "OrtrofitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFCE0F5A20AF19450001097F /* Debug */,
+				AFCE0F5B20AF19450001097F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFCE0F5C20AF19450001097F /* Build configuration list for PBXNativeTarget "OrtrofitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFCE0F5D20AF19450001097F /* Debug */,
+				AFCE0F5E20AF19450001097F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFCE0F2220AF19420001097F /* Project object */;
+}
