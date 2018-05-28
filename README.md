@@ -1,17 +1,17 @@
 # Ortrofit
 An convenient network API framework based on AFNetworking
 
-#Orirofit Guide
+# Orirofit Guide
 
-##介绍
+## 介绍
 **Ortrofit**是一款在**AFNetworking**前端网络网络框架的基础之上封装出来的一套新的网络API框架。它的主要思想源于安卓的基于**OkHttp**封装出来的**Retrofit**，因此取名为**Ortrofit**也是为了向其致敬。**Ortrofit**旨在使用Annotation的方式简洁的描述一个网络请求的API，并在Request和Response中实现自定义的APO拦截，同时也增加了对于RAC的支持。
-##依赖 
+## 依赖 
 * pod 'AFNetworking', '3.1.0' 
 * pod 'ReactiveCocoa', '2.5'
 
-##开始
+## 开始
 
-####创建并配置一个Ortrofit
+#### 创建并配置一个Ortrofit
 ```
       Ortrofit *ortrofitInstance = Ortrofit.new.baseURL(@"https://oriente.com/")
                                    .sessionTaskFactory([OrtroSessionTaskFactory new])
@@ -20,12 +20,12 @@ An convenient network API framework based on AFNetworking
                                    .headers(@{@"mobile-agent":@"xxx"})
                                    .requestTimeOut(@(30.0f));
 ```
-通过上面👆代码可以创建一个**Ortrofit**并进行了常规的配置, 建议业务使用时只需要一个**Ortrofit**实例。
+通过上面👆代码可以创建一个**Ortrofit**并进行了常规的配置, 建议业务使用时只需要一个 ** Ortrofit ** 实例。
 
-* **baseURL：** 网络请求连接中前面相同的部分可以提前配置，后面的请求API只需要配置Path即可。
-* **OrtroSessionTaskFactory：** 工厂方法，可以被业务层继承并复写，默认返回一个**NSURLSessionTask**的实例。
-* **OrtroRACCallAdaptorFactory:** 工厂方法，继承自**OrtroCallAdaptorFactory**在其*-(id)adapt:*方法内包装了**OrtroCall**并返回了**RACSignal**实例。
-* **OrtroCallAdaptorFactory:** **OrtroCall**的默认工厂方法，接受**OrtroCall**实例并直接返回不作处理。
+* ** baseURL：** 网络请求连接中前面相同的部分可以提前配置，后面的请求API只需要配置Path即可。
+* ** OrtroSessionTaskFactory：** 工厂方法，可以被业务层继承并复写，默认返回一个** NSURLSessionTask ** 的实例。
+* ** OrtroRACCallAdaptorFactory:** 工厂方法，继承自 ** OrtroCallAdaptorFactory ** 在其*-(id)adapt:*方法内包装了**OrtroCall**并返回了** RACSignal ** 实例。
+* ** OrtroCallAdaptorFactory: ** ** OrtroCall ** 的默认工厂方法，接受 ** OrtroCall ** 实例并直接返回不作处理。
 
 ####网络服务定义
 ```
