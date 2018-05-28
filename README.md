@@ -112,3 +112,9 @@ A convenient network API framework based on AFNetworking
 	}];
 	
 ```
+
+## License
+
+Ortrofit is released under the MIT license. See [LICENSE](https://github.com/Oriente-iOS/Ortrofit/blob/master/LICENSE) for details.
+
+
