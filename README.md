@@ -10,7 +10,7 @@ A convenient network API framework based on AFNetworking
 ## 开始
 
 #### 创建并配置一个Ortrofit
-```
+```objective-c
       Ortrofit *ortrofitInstance = Ortrofit.new.baseURL(@"https://oriente.com/")
                                    .sessionTaskFactory([OrtroSessionTaskFactory new])
                                    .callFactories(@[[OrtroRACCallAdaptorFactory new],
@@ -26,7 +26,7 @@ A convenient network API framework based on AFNetworking
 * **OrtroCallAdaptorFactory:** **OrtroCall**的默认工厂方法，接受**OrtroCall** 实例并直接返回不作处理。
 
 #### 网络服务定义
-```
+```objective-c
 @class RACSignal;
 @class OrtroCall;
 
@@ -79,7 +79,7 @@ A convenient network API framework based on AFNetworking
 
 除了支持常规的url外，还支持路径上参数{xxx}的解析，如：
 
-```
+```objective-c
 @Path(user/{phoneNO}/getuserinfo)
 
 ```
@@ -89,13 +89,13 @@ A convenient network API framework based on AFNetworking
 
 对于单个请求需要设置特殊的请求头信息也是可以支持的，如：
 
-```
+```objective-c
 @Header(@"language":@"CN")
 ```
 #### 网络服务调用
 业务场景中进行网络服务调用无需再去记住各式各样的Path，拼装各种参数，只需要知道需要调用某个服务的某个API即可直接调用,如：
 
-```
+```objective-c
 //RAC 调用的例子
     UserService *user = [ortrofit create:[UserService class]];
     [user getUserInfo:@"1234"] subscribeNext:^(id x) {
