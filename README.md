@@ -4,8 +4,15 @@ A convenient network API framework based on AFNetworking
 ## 介绍
 **Ortrofit**是一款在**AFNetworking**前端网络网络框架的基础之上封装出来的一套新的网络API框架。它的主要思想源于安卓的基于**OkHttp**封装出来的**Retrofit**，因此取名为**Ortrofit**也是为了向其致敬。**Ortrofit**旨在使用Annotation的方式简洁的描述一个网络请求的API，并在Request和Response中实现自定义的APO拦截，同时也增加了对于RAC的支持。
 ## 依赖 
+
+platform :ios, '9.0'
+
 * pod 'AFNetworking', '3.1.0' 
 * pod 'ReactiveCocoa', '2.5'
+
+## 引用
+cocoapods
+* pod 'Ortrofit', '0.0.1'
 
 ## 开始
 
