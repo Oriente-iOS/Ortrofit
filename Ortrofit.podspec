@@ -10,57 +10,71 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = 'Ortrofit/Ortrofit/*.{h,m}'
   s.ios.deployment_target = '7.0'
+  s.user_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
 
   s.subspec 'SupportFiles' do |ss|
-    ss.source_files = 'Ortrofit/Ortrofit/ServiceCall/*.{h,m}'
-    ss.public_header_files = 'Ortrofit/Ortrofit/ServiceCall/*.h'
-  end
-
-  s.subspec 'Utility' do |ss|
-    ss.source_files = 'Ortrofit/Ortrofit/Utility/*.{h,m}'
-    ss.public_header_files = 'Ortrofit/Ortrofit/Utility/*.h'
-    ss.dependency 'Ortrofit/SupportFiles'
+    ss.source_files = 'Ortrofit/Ortrofit/SupportFiles/*.{h,m}'
+    ss.public_header_files = 'Ortrofit/Ortrofit/SupportFiles/*.h'
   end
 
   s.subspec 'RequestAdaptor' do |ss|
+    ss.dependency 'Ortrofit/SupportFiles'
+
     ss.source_files = 'Ortrofit/Ortrofit/RequestAdaptor/*.{h,m}'
     ss.public_header_files = 'Ortrofit/Ortrofit/RequestAdaptor/*.h'
-
-    ss.dependency 'Ortrofit/Utility'
-    ss.dependency 'Ortrofit/SupportFiles'
   end
 
   s.subspec 'ResponseAdaptor' do |ss|
+    ss.dependency 'Ortrofit/SupportFiles'
+
     ss.source_files = 'Ortrofit/Ortrofit/ResponseAdaptor/*.{h,m}'
     ss.public_header_files = 'Ortrofit/Ortrofit/ResponseAdaptor/*.h'
-
-    ss.dependency 'Ortrofit/Utility'
-    ss.dependency 'Ortrofit/SupportFiles'
-  end
-
-  s.subspec 'CallAdaptor' do |ss|
-    ss.source_files = 'Ortrofit/Ortrofit/CallAdaptor/**/*.{h,m}'
-    ss.public_header_files = 'Ortrofit/Ortrofit/CallAdaptor/**/*.h'
-    ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
-
-    ss.dependency 'Ortrofit/Utility'
-    ss.dependency 'Ortrofit/SupportFiles'
   end
 
   s.subspec 'OrtroProxy' do |ss|
+    ss.dependency 'Ortrofit/SupportFiles'
+
     ss.source_files = 'Ortrofit/Ortrofit/OrtroProxy/*.{h,m}'
     ss.public_header_files = 'Ortrofit/Ortrofit/OrtroProxy/*.h'
-
-    ss.dependency 'Ortrofit/Utility'
-    ss.dependency 'Ortrofit/SupportFiles'
   end
 
-  s.subspec 'ServiceCall' do |ss|
-    ss.source_files = 'Ortrofit/Ortrofit/SupportFiles/*.{h,m}'
-    ss.public_header_files = 'Ortrofit/Ortrofit/SupportFiles/*.h'
-
-    ss.dependency 'Ortrofit/Utility'
+  s.subspec 'OrtrofitCore' do |ss|
+    ss.dependency 'Ortrofit/OrtroProxy'
     ss.dependency 'Ortrofit/SupportFiles'
+
+    ss.source_files = 'Ortrofit/Ortrofit/Ortrofit/**/*.{h,m}'
+    ss.public_header_files = 'Ortrofit/Ortrofit/Ortrofit/**/*.h'
+  end
+
+  s.subspec 'CallAdaptor' do |ss|
+    ss.dependency 'Ortrofit/OrtrofitCore'
+    ss.dependency 'Ortrofit/SupportFiles'
+
+    ss.source_files = 'Ortrofit/Ortrofit/CallAdaptor/**/*.{h,m}'
+    ss.public_header_files = 'Ortrofit/Ortrofit/CallAdaptor/**/*.h'
+
+  end
+
+  s.subspec 'CallAdaptorRAC' do |ss|
+    ss.dependency 'Ortrofit/OrtrofitCore'
+    ss.dependency 'Ortrofit/SupportFiles'
+
+    ss.source_files = 'Ortrofit/Ortrofit/CallAdaptorRAC/**/*.{h,m}'
+    ss.public_header_files = 'Ortrofit/Ortrofit/CallAdaptorRAC/**/*.h'
+
+  end
+
+  s.subspec 'OrtrofitConvenient' do |ss|
+    ss.dependency 'Ortrofit/OrtrofitCore'
+    ss.dependency 'Ortrofit/SupportFiles'
+    ss.dependency 'Ortrofit/CallAdaptor'
+    ss.dependency 'Ortrofit/CallAdaptorRAC'
+    ss.dependency 'Ortrofit/RequestAdaptor'
+    ss.dependency 'Ortrofit/ResponseAdaptor'
+
+
+    ss.source_files = 'Ortrofit/Ortrofit/OrtrofitConvenient/**/*.{h,m}'
+    ss.public_header_files = 'Ortrofit/Ortrofit/OrtrofitConvenient/**/*.h'
   end
 
   s.dependency 'AFNetworking', '3.1.0'

@@ -19,25 +19,23 @@
 		AFCE0F9820AF19B90001097F /* OrtroProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F6120AF19B90001097F /* OrtroProxy.m */; };
 		AFCE0F9920AF19B90001097F /* OrInvocationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F6220AF19B90001097F /* OrInvocationHandler.m */; };
 		AFCE0F9C20AF19B90001097F /* ORRequestAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F7020AF19B90001097F /* ORRequestAdaptor.m */; };
-		AFCE0F9D20AF19B90001097F /* ORRequestRedirectAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F7120AF19B90001097F /* ORRequestRedirectAdaptor.m */; };
-		AFCE0F9E20AF19B90001097F /* ORRequestRedirectAdaptorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F7220AF19B90001097F /* ORRequestRedirectAdaptorFactory.m */; };
 		AFCE0F9F20AF19B90001097F /* ORRequestAdaptorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F7320AF19B90001097F /* ORRequestAdaptorFactory.m */; };
 		AFCE0FA020AF19B90001097F /* OrtroCall.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F7920AF19B90001097F /* OrtroCall.m */; };
 		AFCE0FA120AF19B90001097F /* OrtroSessionTaskFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F7A20AF19B90001097F /* OrtroSessionTaskFactory.m */; };
 		AFCE0FA220AF19B90001097F /* OrtroCallSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F7B20AF19B90001097F /* OrtroCallSignature.m */; };
-		AFCE0FA320AF19B90001097F /* OrtroServiceMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F7C20AF19B90001097F /* OrtroServiceMethod.m */; };
 		AFCE0FA420AF19B90001097F /* ORResponseAdaptorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F7E20AF19B90001097F /* ORResponseAdaptorFactory.m */; };
 		AFCE0FA520AF19B90001097F /* ORResponseAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F8120AF19B90001097F /* ORResponseAdaptor.m */; };
 		AFCE0FA620AF19B90001097F /* OrtroCallAdaptorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F8320AF19B90001097F /* OrtroCallAdaptorFactory.m */; };
 		AFCE0FA720AF19B90001097F /* OrtroCallAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F8520AF19B90001097F /* OrtroCallAdaptor.m */; };
-		AFCE0FA820AF19B90001097F /* RACSignal+OrtroCall.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F8820AF19B90001097F /* RACSignal+OrtroCall.m */; };
-		AFCE0FA920AF19B90001097F /* OrtroRACCallAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F8B20AF19B90001097F /* OrtroRACCallAdaptor.m */; };
-		AFCE0FAA20AF19B90001097F /* OrtroRACCallAdaptorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F8D20AF19B90001097F /* OrtroRACCallAdaptorFactory.m */; };
 		AFCE0FAB20AF19B90001097F /* OrtroPath.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F9120AF19B90001097F /* OrtroPath.m */; };
-		AFCE0FAC20AF19B90001097F /* Ortrofit.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F9220AF19B90001097F /* Ortrofit.m */; };
 		AFCE0FAD20AF19B90001097F /* OrtroServiceMethod+ParamHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F9420AF19B90001097F /* OrtroServiceMethod+ParamHandler.m */; };
 		AFCE0FAE20AF19B90001097F /* ORMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0F9720AF19B90001097F /* ORMethod.m */; };
 		AFCE0FB220AF1AAF0001097F /* OrtrofitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0FB120AF1AAF0001097F /* OrtrofitManager.m */; };
+		AFCE0FF220BC39340001097F /* OrtroServiceMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0FF020BC39330001097F /* OrtroServiceMethod.m */; };
+		AFCE0FF320BC39340001097F /* Ortrofit.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0FF120BC39330001097F /* Ortrofit.m */; };
+		AFCE0FFB20BCEBA40001097F /* OrtroRACCallAdaptorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0FF520BCEBA30001097F /* OrtroRACCallAdaptorFactory.m */; };
+		AFCE0FFC20BCEBA40001097F /* RACSignal+OrtroCall.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0FF820BCEBA40001097F /* RACSignal+OrtroCall.m */; };
+		AFCE0FFD20BCEBA40001097F /* OrtroRACCallAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE0FF920BCEBA40001097F /* OrtroRACCallAdaptor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,23 +78,16 @@
 		AFCE0F6220AF19B90001097F /* OrInvocationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrInvocationHandler.m; sourceTree = "<group>"; };
 		AFCE0F6320AF19B90001097F /* OrtroProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroProxy.h; sourceTree = "<group>"; };
 		AFCE0F6420AF19B90001097F /* OrInvocationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrInvocationHandler.h; sourceTree = "<group>"; };
-		AFCE0F6A20AF19B90001097F /* OrtroServiceMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroServiceMethod.h; sourceTree = "<group>"; };
-		AFCE0F6C20AF19B90001097F /* ORRequestRedirectAdaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORRequestRedirectAdaptor.h; sourceTree = "<group>"; };
 		AFCE0F6D20AF19B90001097F /* ORRequestAdaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORRequestAdaptor.h; sourceTree = "<group>"; };
 		AFCE0F6E20AF19B90001097F /* ORRequestAdaptorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORRequestAdaptorFactory.h; sourceTree = "<group>"; };
-		AFCE0F6F20AF19B90001097F /* ORRequestRedirectAdaptorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORRequestRedirectAdaptorFactory.h; sourceTree = "<group>"; };
 		AFCE0F7020AF19B90001097F /* ORRequestAdaptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORRequestAdaptor.m; sourceTree = "<group>"; };
-		AFCE0F7120AF19B90001097F /* ORRequestRedirectAdaptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORRequestRedirectAdaptor.m; sourceTree = "<group>"; };
-		AFCE0F7220AF19B90001097F /* ORRequestRedirectAdaptorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORRequestRedirectAdaptorFactory.m; sourceTree = "<group>"; };
 		AFCE0F7320AF19B90001097F /* ORRequestAdaptorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORRequestAdaptorFactory.m; sourceTree = "<group>"; };
-		AFCE0F7420AF19B90001097F /* Ortrofit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ortrofit.h; sourceTree = "<group>"; };
 		AFCE0F7620AF19B90001097F /* OrtroCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroCall.h; sourceTree = "<group>"; };
 		AFCE0F7720AF19B90001097F /* OrtroSessionTaskFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroSessionTaskFactory.h; sourceTree = "<group>"; };
 		AFCE0F7820AF19B90001097F /* OrtroCallSignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroCallSignature.h; sourceTree = "<group>"; };
 		AFCE0F7920AF19B90001097F /* OrtroCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrtroCall.m; sourceTree = "<group>"; };
 		AFCE0F7A20AF19B90001097F /* OrtroSessionTaskFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrtroSessionTaskFactory.m; sourceTree = "<group>"; };
 		AFCE0F7B20AF19B90001097F /* OrtroCallSignature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrtroCallSignature.m; sourceTree = "<group>"; };
-		AFCE0F7C20AF19B90001097F /* OrtroServiceMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrtroServiceMethod.m; sourceTree = "<group>"; };
 		AFCE0F7E20AF19B90001097F /* ORResponseAdaptorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORResponseAdaptorFactory.m; sourceTree = "<group>"; };
 		AFCE0F7F20AF19B90001097F /* ORResponseAdaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORResponseAdaptor.h; sourceTree = "<group>"; };
 		AFCE0F8020AF19B90001097F /* ORResponseAdaptorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORResponseAdaptorFactory.h; sourceTree = "<group>"; };
@@ -105,22 +96,25 @@
 		AFCE0F8420AF19B90001097F /* OrtroCallAdaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroCallAdaptor.h; sourceTree = "<group>"; };
 		AFCE0F8520AF19B90001097F /* OrtroCallAdaptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrtroCallAdaptor.m; sourceTree = "<group>"; };
 		AFCE0F8620AF19B90001097F /* OrtroCallAdaptorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroCallAdaptorFactory.h; sourceTree = "<group>"; };
-		AFCE0F8820AF19B90001097F /* RACSignal+OrtroCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+OrtroCall.m"; sourceTree = "<group>"; };
-		AFCE0F8920AF19B90001097F /* OrtroRACCallAdaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroRACCallAdaptor.h; sourceTree = "<group>"; };
-		AFCE0F8A20AF19B90001097F /* OrtroRACCallAdaptorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroRACCallAdaptorFactory.h; sourceTree = "<group>"; };
-		AFCE0F8B20AF19B90001097F /* OrtroRACCallAdaptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrtroRACCallAdaptor.m; sourceTree = "<group>"; };
-		AFCE0F8C20AF19B90001097F /* RACSignal+OrtroCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+OrtroCall.h"; sourceTree = "<group>"; };
-		AFCE0F8D20AF19B90001097F /* OrtroRACCallAdaptorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrtroRACCallAdaptorFactory.m; sourceTree = "<group>"; };
 		AFCE0F8F20AF19B90001097F /* OrtroPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroPath.h; sourceTree = "<group>"; };
 		AFCE0F9020AF19B90001097F /* OrtroMicro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroMicro.h; sourceTree = "<group>"; };
 		AFCE0F9120AF19B90001097F /* OrtroPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrtroPath.m; sourceTree = "<group>"; };
-		AFCE0F9220AF19B90001097F /* Ortrofit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ortrofit.m; sourceTree = "<group>"; };
 		AFCE0F9420AF19B90001097F /* OrtroServiceMethod+ParamHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OrtroServiceMethod+ParamHandler.m"; sourceTree = "<group>"; };
 		AFCE0F9520AF19B90001097F /* ORMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORMethod.h; sourceTree = "<group>"; };
 		AFCE0F9620AF19B90001097F /* OrtroServiceMethod+ParamHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OrtroServiceMethod+ParamHandler.h"; sourceTree = "<group>"; };
 		AFCE0F9720AF19B90001097F /* ORMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORMethod.m; sourceTree = "<group>"; };
 		AFCE0FB020AF1AAF0001097F /* OrtrofitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtrofitManager.h; sourceTree = "<group>"; };
 		AFCE0FB120AF1AAF0001097F /* OrtrofitManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrtrofitManager.m; sourceTree = "<group>"; };
+		AFCE0FEE20BC39330001097F /* OrtroServiceMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroServiceMethod.h; sourceTree = "<group>"; };
+		AFCE0FEF20BC39330001097F /* Ortrofit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ortrofit.h; sourceTree = "<group>"; };
+		AFCE0FF020BC39330001097F /* OrtroServiceMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrtroServiceMethod.m; sourceTree = "<group>"; };
+		AFCE0FF120BC39330001097F /* Ortrofit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ortrofit.m; sourceTree = "<group>"; };
+		AFCE0FF520BCEBA30001097F /* OrtroRACCallAdaptorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrtroRACCallAdaptorFactory.m; sourceTree = "<group>"; };
+		AFCE0FF620BCEBA30001097F /* RACSignal+OrtroCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+OrtroCall.h"; sourceTree = "<group>"; };
+		AFCE0FF720BCEBA40001097F /* OrtroRACCallAdaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroRACCallAdaptor.h; sourceTree = "<group>"; };
+		AFCE0FF820BCEBA40001097F /* RACSignal+OrtroCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+OrtroCall.m"; sourceTree = "<group>"; };
+		AFCE0FF920BCEBA40001097F /* OrtroRACCallAdaptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrtroRACCallAdaptor.m; sourceTree = "<group>"; };
+		AFCE0FFA20BCEBA40001097F /* OrtroRACCallAdaptorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroRACCallAdaptorFactory.h; sourceTree = "<group>"; };
 		DD407D46F88662BF48A6C350 /* Pods-Ortrofit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ortrofit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ortrofit/Pods-Ortrofit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,8 +186,6 @@
 		AFCE0F2C20AF19420001097F /* Ortrofit */ = {
 			isa = PBXGroup;
 			children = (
-				AFCE0FEC20BBF0230001097F /* OrtrofitConvenient */,
-				AFCE0FAF20AF1AAF0001097F /* OrtrofitDemo */,
 				AFCE0F5F20AF19B90001097F /* Ortrofit */,
 				AFCE0F2D20AF19420001097F /* AppDelegate.h */,
 				AFCE0F2E20AF19420001097F /* AppDelegate.m */,
@@ -229,17 +221,14 @@
 		AFCE0F5F20AF19B90001097F /* Ortrofit */ = {
 			isa = PBXGroup;
 			children = (
-				AFCE0F7420AF19B90001097F /* Ortrofit.h */,
-				AFCE0F9220AF19B90001097F /* Ortrofit.m */,
-				AFCE0F6A20AF19B90001097F /* OrtroServiceMethod.h */,
-				AFCE0F7C20AF19B90001097F /* OrtroServiceMethod.m */,
-				AFCE0F6020AF19B90001097F /* OrtroProxy */,
-				AFCE0F6B20AF19B90001097F /* RequestAdaptor */,
-				AFCE0F7520AF19B90001097F /* ServiceCall */,
-				AFCE0F7D20AF19B90001097F /* ResponseAdaptor */,
-				AFCE0F8220AF19B90001097F /* CallAdaptor */,
+				AFCE0FF420BCEB640001097F /* CallAdaptorRAC */,
 				AFCE0F8E20AF19B90001097F /* SupportFiles */,
-				AFCE0F9320AF19B90001097F /* Utility */,
+				AFCE0F8220AF19B90001097F /* CallAdaptor */,
+				AFCE0F7D20AF19B90001097F /* ResponseAdaptor */,
+				AFCE0F6B20AF19B90001097F /* RequestAdaptor */,
+				AFCE0F6020AF19B90001097F /* OrtroProxy */,
+				AFCE0FEC20BBF0230001097F /* OrtrofitConvenient */,
+				AFCE0FED20BC39330001097F /* Ortrofit */,
 			);
 			path = Ortrofit;
 			sourceTree = "<group>";
@@ -247,10 +236,12 @@
 		AFCE0F6020AF19B90001097F /* OrtroProxy */ = {
 			isa = PBXGroup;
 			children = (
-				AFCE0F6120AF19B90001097F /* OrtroProxy.m */,
-				AFCE0F6220AF19B90001097F /* OrInvocationHandler.m */,
+				AFCE0F9520AF19B90001097F /* ORMethod.h */,
+				AFCE0F9720AF19B90001097F /* ORMethod.m */,
 				AFCE0F6320AF19B90001097F /* OrtroProxy.h */,
+				AFCE0F6120AF19B90001097F /* OrtroProxy.m */,
 				AFCE0F6420AF19B90001097F /* OrInvocationHandler.h */,
+				AFCE0F6220AF19B90001097F /* OrInvocationHandler.m */,
 			);
 			path = OrtroProxy;
 			sourceTree = "<group>";
@@ -258,29 +249,12 @@
 		AFCE0F6B20AF19B90001097F /* RequestAdaptor */ = {
 			isa = PBXGroup;
 			children = (
-				AFCE0F6C20AF19B90001097F /* ORRequestRedirectAdaptor.h */,
 				AFCE0F6D20AF19B90001097F /* ORRequestAdaptor.h */,
-				AFCE0F6E20AF19B90001097F /* ORRequestAdaptorFactory.h */,
-				AFCE0F6F20AF19B90001097F /* ORRequestRedirectAdaptorFactory.h */,
 				AFCE0F7020AF19B90001097F /* ORRequestAdaptor.m */,
-				AFCE0F7120AF19B90001097F /* ORRequestRedirectAdaptor.m */,
-				AFCE0F7220AF19B90001097F /* ORRequestRedirectAdaptorFactory.m */,
+				AFCE0F6E20AF19B90001097F /* ORRequestAdaptorFactory.h */,
 				AFCE0F7320AF19B90001097F /* ORRequestAdaptorFactory.m */,
 			);
 			path = RequestAdaptor;
-			sourceTree = "<group>";
-		};
-		AFCE0F7520AF19B90001097F /* ServiceCall */ = {
-			isa = PBXGroup;
-			children = (
-				AFCE0F7620AF19B90001097F /* OrtroCall.h */,
-				AFCE0F7720AF19B90001097F /* OrtroSessionTaskFactory.h */,
-				AFCE0F7820AF19B90001097F /* OrtroCallSignature.h */,
-				AFCE0F7920AF19B90001097F /* OrtroCall.m */,
-				AFCE0F7A20AF19B90001097F /* OrtroSessionTaskFactory.m */,
-				AFCE0F7B20AF19B90001097F /* OrtroCallSignature.m */,
-			);
-			path = ServiceCall;
 			sourceTree = "<group>";
 		};
 		AFCE0F7D20AF19B90001097F /* ResponseAdaptor */ = {
@@ -301,50 +275,16 @@
 				AFCE0F8420AF19B90001097F /* OrtroCallAdaptor.h */,
 				AFCE0F8520AF19B90001097F /* OrtroCallAdaptor.m */,
 				AFCE0F8620AF19B90001097F /* OrtroCallAdaptorFactory.h */,
-				AFCE0F8720AF19B90001097F /* RAC */,
 			);
 			path = CallAdaptor;
-			sourceTree = "<group>";
-		};
-		AFCE0F8720AF19B90001097F /* RAC */ = {
-			isa = PBXGroup;
-			children = (
-				AFCE0F8820AF19B90001097F /* RACSignal+OrtroCall.m */,
-				AFCE0F8920AF19B90001097F /* OrtroRACCallAdaptor.h */,
-				AFCE0F8A20AF19B90001097F /* OrtroRACCallAdaptorFactory.h */,
-				AFCE0F8B20AF19B90001097F /* OrtroRACCallAdaptor.m */,
-				AFCE0F8C20AF19B90001097F /* RACSignal+OrtroCall.h */,
-				AFCE0F8D20AF19B90001097F /* OrtroRACCallAdaptorFactory.m */,
-			);
-			path = RAC;
 			sourceTree = "<group>";
 		};
 		AFCE0F8E20AF19B90001097F /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
-				AFCE0F8F20AF19B90001097F /* OrtroPath.h */,
 				AFCE0F9020AF19B90001097F /* OrtroMicro.h */,
-				AFCE0F9120AF19B90001097F /* OrtroPath.m */,
 			);
 			path = SupportFiles;
-			sourceTree = "<group>";
-		};
-		AFCE0F9320AF19B90001097F /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				AFCE0F9420AF19B90001097F /* OrtroServiceMethod+ParamHandler.m */,
-				AFCE0F9520AF19B90001097F /* ORMethod.h */,
-				AFCE0F9620AF19B90001097F /* OrtroServiceMethod+ParamHandler.h */,
-				AFCE0F9720AF19B90001097F /* ORMethod.m */,
-			);
-			path = Utility;
-			sourceTree = "<group>";
-		};
-		AFCE0FAF20AF1AAF0001097F /* OrtrofitDemo */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = OrtrofitDemo;
 			sourceTree = "<group>";
 		};
 		AFCE0FEC20BBF0230001097F /* OrtrofitConvenient */ = {
@@ -354,6 +294,40 @@
 				AFCE0FB120AF1AAF0001097F /* OrtrofitManager.m */,
 			);
 			path = OrtrofitConvenient;
+			sourceTree = "<group>";
+		};
+		AFCE0FED20BC39330001097F /* Ortrofit */ = {
+			isa = PBXGroup;
+			children = (
+				AFCE0FEF20BC39330001097F /* Ortrofit.h */,
+				AFCE0FF120BC39330001097F /* Ortrofit.m */,
+				AFCE0F7620AF19B90001097F /* OrtroCall.h */,
+				AFCE0F7920AF19B90001097F /* OrtroCall.m */,
+				AFCE0F8F20AF19B90001097F /* OrtroPath.h */,
+				AFCE0F9120AF19B90001097F /* OrtroPath.m */,
+				AFCE0FEE20BC39330001097F /* OrtroServiceMethod.h */,
+				AFCE0FF020BC39330001097F /* OrtroServiceMethod.m */,
+				AFCE0F9420AF19B90001097F /* OrtroServiceMethod+ParamHandler.m */,
+				AFCE0F9620AF19B90001097F /* OrtroServiceMethod+ParamHandler.h */,
+				AFCE0F7820AF19B90001097F /* OrtroCallSignature.h */,
+				AFCE0F7B20AF19B90001097F /* OrtroCallSignature.m */,
+				AFCE0F7720AF19B90001097F /* OrtroSessionTaskFactory.h */,
+				AFCE0F7A20AF19B90001097F /* OrtroSessionTaskFactory.m */,
+			);
+			path = Ortrofit;
+			sourceTree = "<group>";
+		};
+		AFCE0FF420BCEB640001097F /* CallAdaptorRAC */ = {
+			isa = PBXGroup;
+			children = (
+				AFCE0FF720BCEBA40001097F /* OrtroRACCallAdaptor.h */,
+				AFCE0FF920BCEBA40001097F /* OrtroRACCallAdaptor.m */,
+				AFCE0FFA20BCEBA40001097F /* OrtroRACCallAdaptorFactory.h */,
+				AFCE0FF520BCEBA30001097F /* OrtroRACCallAdaptorFactory.m */,
+				AFCE0FF620BCEBA30001097F /* RACSignal+OrtroCall.h */,
+				AFCE0FF820BCEBA40001097F /* RACSignal+OrtroCall.m */,
+			);
+			path = CallAdaptorRAC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -541,29 +515,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFCE0FAD20AF19B90001097F /* OrtroServiceMethod+ParamHandler.m in Sources */,
+				AFCE0FFC20BCEBA40001097F /* RACSignal+OrtroCall.m in Sources */,
 				AFCE0FA020AF19B90001097F /* OrtroCall.m in Sources */,
 				AFCE0F9F20AF19B90001097F /* ORRequestAdaptorFactory.m in Sources */,
 				AFCE0F3220AF19420001097F /* ViewController.m in Sources */,
 				AFCE0F9C20AF19B90001097F /* ORRequestAdaptor.m in Sources */,
-				AFCE0FA820AF19B90001097F /* RACSignal+OrtroCall.m in Sources */,
+				AFCE0FF320BC39340001097F /* Ortrofit.m in Sources */,
 				AFCE0FA220AF19B90001097F /* OrtroCallSignature.m in Sources */,
 				AFCE0FAB20AF19B90001097F /* OrtroPath.m in Sources */,
-				AFCE0F9E20AF19B90001097F /* ORRequestRedirectAdaptorFactory.m in Sources */,
+				AFCE0FFB20BCEBA40001097F /* OrtroRACCallAdaptorFactory.m in Sources */,
 				AFCE0FA420AF19B90001097F /* ORResponseAdaptorFactory.m in Sources */,
-				AFCE0FA920AF19B90001097F /* OrtroRACCallAdaptor.m in Sources */,
 				AFCE0FA720AF19B90001097F /* OrtroCallAdaptor.m in Sources */,
 				AFCE0FA620AF19B90001097F /* OrtroCallAdaptorFactory.m in Sources */,
 				AFCE0FAE20AF19B90001097F /* ORMethod.m in Sources */,
-				AFCE0FAC20AF19B90001097F /* Ortrofit.m in Sources */,
-				AFCE0F9D20AF19B90001097F /* ORRequestRedirectAdaptor.m in Sources */,
+				AFCE0FF220BC39340001097F /* OrtroServiceMethod.m in Sources */,
 				AFCE0F9920AF19B90001097F /* OrInvocationHandler.m in Sources */,
 				AFCE0F3D20AF19450001097F /* main.m in Sources */,
 				AFCE0F2F20AF19420001097F /* AppDelegate.m in Sources */,
 				AFCE0FA520AF19B90001097F /* ORResponseAdaptor.m in Sources */,
-				AFCE0FA320AF19B90001097F /* OrtroServiceMethod.m in Sources */,
 				AFCE0FB220AF1AAF0001097F /* OrtrofitManager.m in Sources */,
+				AFCE0FFD20BCEBA40001097F /* OrtroRACCallAdaptor.m in Sources */,
 				AFCE0FA120AF19B90001097F /* OrtroSessionTaskFactory.m in Sources */,
-				AFCE0FAA20AF19B90001097F /* OrtroRACCallAdaptorFactory.m in Sources */,
 				AFCE0F9820AF19B90001097F /* OrtroProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
