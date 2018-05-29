@@ -97,7 +97,6 @@
 		AFCE0F8520AF19B90001097F /* OrtroCallAdaptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrtroCallAdaptor.m; sourceTree = "<group>"; };
 		AFCE0F8620AF19B90001097F /* OrtroCallAdaptorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroCallAdaptorFactory.h; sourceTree = "<group>"; };
 		AFCE0F8F20AF19B90001097F /* OrtroPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroPath.h; sourceTree = "<group>"; };
-		AFCE0F9020AF19B90001097F /* OrtroMicro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroMicro.h; sourceTree = "<group>"; };
 		AFCE0F9120AF19B90001097F /* OrtroPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrtroPath.m; sourceTree = "<group>"; };
 		AFCE0F9420AF19B90001097F /* OrtroServiceMethod+ParamHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OrtroServiceMethod+ParamHandler.m"; sourceTree = "<group>"; };
 		AFCE0F9520AF19B90001097F /* ORMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORMethod.h; sourceTree = "<group>"; };
@@ -115,6 +114,7 @@
 		AFCE0FF820BCEBA40001097F /* RACSignal+OrtroCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+OrtroCall.m"; sourceTree = "<group>"; };
 		AFCE0FF920BCEBA40001097F /* OrtroRACCallAdaptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrtroRACCallAdaptor.m; sourceTree = "<group>"; };
 		AFCE0FFA20BCEBA40001097F /* OrtroRACCallAdaptorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroRACCallAdaptorFactory.h; sourceTree = "<group>"; };
+		AFCE0FFF20BCFA420001097F /* OrtroMicro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtroMicro.h; sourceTree = "<group>"; };
 		DD407D46F88662BF48A6C350 /* Pods-Ortrofit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ortrofit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ortrofit/Pods-Ortrofit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -221,8 +221,8 @@
 		AFCE0F5F20AF19B90001097F /* Ortrofit */ = {
 			isa = PBXGroup;
 			children = (
+				AFCE0FFE20BCFA420001097F /* SupportFiles */,
 				AFCE0FF420BCEB640001097F /* CallAdaptorRAC */,
-				AFCE0F8E20AF19B90001097F /* SupportFiles */,
 				AFCE0F8220AF19B90001097F /* CallAdaptor */,
 				AFCE0F7D20AF19B90001097F /* ResponseAdaptor */,
 				AFCE0F6B20AF19B90001097F /* RequestAdaptor */,
@@ -279,14 +279,6 @@
 			path = CallAdaptor;
 			sourceTree = "<group>";
 		};
-		AFCE0F8E20AF19B90001097F /* SupportFiles */ = {
-			isa = PBXGroup;
-			children = (
-				AFCE0F9020AF19B90001097F /* OrtroMicro.h */,
-			);
-			path = SupportFiles;
-			sourceTree = "<group>";
-		};
 		AFCE0FEC20BBF0230001097F /* OrtrofitConvenient */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,6 +320,14 @@
 				AFCE0FF820BCEBA40001097F /* RACSignal+OrtroCall.m */,
 			);
 			path = CallAdaptorRAC;
+			sourceTree = "<group>";
+		};
+		AFCE0FFE20BCFA420001097F /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AFCE0FFF20BCFA420001097F /* OrtroMicro.h */,
+			);
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
