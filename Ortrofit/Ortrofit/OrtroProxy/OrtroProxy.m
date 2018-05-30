@@ -46,13 +46,13 @@ static void ortro_add(id self, SEL selector, OrInvocationHandler *invocationHand
     NSCParameterAssert(invocationHandler);
     
     aspect_performLocked(^{
-        ortro_cacheInvacationHanler(self, invocationHandler);
+        ortro_cacheInvocationHandler(self, invocationHandler);
         // Modify the class to allow message interception.
         ortro_prepareClassAndHookSelector(self, selector, nil);
     });
 }
 
-static void ortro_cacheInvacationHanler(NSObject *obj, OrInvocationHandler *invocationHandler){
+static void ortro_cacheInvocationHandler(NSObject *obj, OrInvocationHandler *invocationHandler){
     static dispatch_once_t invocationToken;
     dispatch_once(&invocationToken, ^{
         invocationHandlerCache = [NSMutableDictionary dictionary];
