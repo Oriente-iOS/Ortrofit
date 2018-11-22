@@ -46,6 +46,7 @@ typedef Ortrofit*(^ConfigSetting)(id param);
  */
 @property (nonatomic, copy, readonly) NSString *baseUri;
 @property (nonatomic, strong ,readonly) NSDictionary *ortroHeaders;
+@property (nonatomic, copy ,readonly) NSDictionary*(^ortroDynamicHeaders)(void);
 @property (nonatomic, strong, readonly) NSArray *requestFactories;
 @property (nonatomic, strong, readonly) NSArray *responseFactories;
 @property (nonatomic, strong, readonly) NSArray *callAdaptorFacroties;
@@ -61,6 +62,11 @@ typedef Ortrofit*(^ConfigSetting)(id param);
  *该方法可以配置公共的请求头信息
  */
 - (ConfigSetting)headers;
+/*
+ *
+ */
+
+- (Ortrofit*(^)(NSDictionary*(^)(void)))dynamicHeaders;
 
 /*
  *

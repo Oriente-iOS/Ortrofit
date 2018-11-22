@@ -21,6 +21,7 @@
 
 @property (nonatomic, copy) NSString *baseUri;
 @property (nonatomic, strong) NSDictionary *ortroHeaders;
+@property (nonatomic, copy) NSDictionary*(^ortroDynamicHeaders)(void);
 @property (nonatomic, strong) NSArray *requestFactories;
 @property (nonatomic, strong) NSArray *responseFactories;
 @property (nonatomic, strong) NSArray *callAdaptorFacroties;
@@ -50,6 +51,13 @@
 - (ConfigSetting)headers{
     return ^(NSDictionary *headers){
         self.ortroHeaders = headers;
+        return self;
+    };
+}
+
+- (Ortrofit *(^)(NSDictionary *(^)(void)))dynamicHeaders{
+    return ^(id headerFunc){
+        self.ortroDynamicHeaders = headerFunc;
         return self;
     };
 }

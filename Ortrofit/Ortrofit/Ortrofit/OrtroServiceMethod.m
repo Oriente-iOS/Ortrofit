@@ -34,6 +34,7 @@
 @property (nonatomic, strong) NSDictionary *headers;
 @property (nonatomic, strong) NSArray *paramKeys;
 @property (nonatomic, strong) NSNumber *timeOut;
+@property (nonatomic, copy) NSDictionary*(^dynamicHeaders)(void);
 
 //@property (nonatomic, strong) NSString *contentType;
 //@property (nonatomic, assign) BOOL hasBody;
@@ -71,6 +72,12 @@
     if (apiHeaders.count > 0) {
         [requestHeaders addEntriesFromDictionary:apiHeaders];
     }
+    
+    if (ortrofit.ortroDynamicHeaders) {
+        self.dynamicHeaders = ortrofit.ortroDynamicHeaders;
+        [requestHeaders addEntriesFromDictionary:ortrofit.ortroDynamicHeaders()];
+    }
+    
     self.headers = requestHeaders.copy;
 
     NSString *returnType = [[orMethod getAnnotations] objectForKey:kReturnType];
@@ -112,8 +119,12 @@
         failure(nil,nil,error);
     }
     //设置请求头部
-    for (NSString *key in self.headers) {
-        [mRequest setValue:[self.headers objectForKey:key] forHTTPHeaderField:key];
+    NSMutableDictionary *realHeaders = [self.headers mutableCopy]?:@{};
+    if (self.dynamicHeaders) {
+        [realHeaders addEntriesFromDictionary:self.dynamicHeaders()];
+    }
+    for (NSString *key in realHeaders) {
+        [mRequest setValue:[realHeaders objectForKey:key] forHTTPHeaderField:key];
     }
     //处理请求的拦截
     NSURLRequest *adaptedRequest = [mRequest copy];
