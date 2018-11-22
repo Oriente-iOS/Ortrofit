@@ -12,7 +12,7 @@
 #import "ORResponseAdaptor.h"
 #import "Ortrofit.h"
 #import "ORMethod.h"
-#import "OrtroMicro.h"
+#import "OrtroMacro.h"
 #import "AFNetworking.h"
 #import "ORRequestAdaptorFactory.h"
 #import "ORRequestAdaptor.h"
@@ -98,10 +98,13 @@
         jsonRequestSerializer.timeoutInterval = 30.0f;
     }
     NSString *fullUrl = nil;
-    if ([self.baseUrl hasSuffix:@"/"]) {
-        fullUrl = [self.baseUrl stringByAppendingString:[self renderPath:requestParameterValues]];
+    NSString *urlPath = [self renderPath:requestParameterValues];
+    if ([self.baseUrl hasSuffix:@"/"] && [urlPath hasPrefix:@"/"]) {
+        fullUrl = [[self.baseUrl substringToIndex:self.baseUrl.length -1] stringByAppendingString:urlPath];
+    }else if ([self.baseUrl hasSuffix:@"/"]) {
+        fullUrl = [self.baseUrl stringByAppendingString:urlPath];
     }else{
-        fullUrl = [[self.baseUrl stringByAppendingString:@"/"] stringByAppendingString:[self renderPath:requestParameterValues]];
+        fullUrl = [[self.baseUrl stringByAppendingString:@"/"] stringByAppendingString:urlPath];
     }
     NSError *error;
     NSMutableURLRequest *mRequest = [jsonRequestSerializer requestWithMethod:self.httpMethod URLString:fullUrl parameters:[self parseRequestParams:requestParameterValues] error:&error];

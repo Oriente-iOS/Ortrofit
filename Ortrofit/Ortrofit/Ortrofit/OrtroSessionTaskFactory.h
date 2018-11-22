@@ -7,9 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "OrtroMicro.h"
+#import "OrtroMacro.h"
+
+@class AFURLSessionManager;
 
 @interface OrtroSessionTaskFactory : NSObject
+
+@property (nonatomic, strong, readonly) AFURLSessionManager *sessionManager;
 
 /*
  *

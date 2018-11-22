@@ -7,14 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "OrtroMicro.h"
+#import "OrtroMacro.h"
 #import "OrtroCallSignature.h"
 
 @class OrtroServiceMethod;
 
 @interface OrtroCall : NSObject
 
-
+@property (nonatomic, weak, readonly) NSURLSessionTask *sessionTask;
 @property (nonatomic, strong, readonly) OrtroCallSignature *callSignature;
 
 /*

@@ -1,5 +1,5 @@
 //
-//  OrtroMicro.h
+//  OrtroMacro.h
 //  OrienteUtility
 //
 //  Created by mathewwang on 2018/4/2.
@@ -8,8 +8,8 @@
 
 #import "OrtroPath.h"
 
-#ifndef OrtroMicro_h
-#define OrtroMicro_h
+#ifndef OrtroMacro_h
+#define OrtroMacro_h
 
 typedef void(^ServiceSuccess)(NSURLResponse * urlResponse, id responseObject);
 typedef void(^ServiceFailure)(NSURLResponse * urlResponse, id responseObject, NSError *error);
@@ -70,4 +70,4 @@ ortro_keywordify \
 class Ortrofit; \
 +(NSDictionary *)ortro_concat(ortro_concat(ortro_api_,selName),__LINE__) \
 
-#endif /* OrtroMicro_h */
+#endif /* OrtroMacro_h */
