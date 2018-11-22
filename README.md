@@ -11,8 +11,7 @@ platform :ios, '9.0'
 * pod 'ReactiveCocoa', '2.5'
 
 ## 引用
-cocoapods
-* pod 'Ortrofit', '0.0.1'
+//TO DO
 
 ## 开始
 
