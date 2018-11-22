@@ -11,7 +11,9 @@ platform :ios, '9.0'
 * pod 'ReactiveCocoa', '2.5'
 
 ## 引用
-//TO DO
+1 源码
+2 cocoapods  
+// TO DO
 
 ## 开始
 
